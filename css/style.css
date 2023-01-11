@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.img{
+    width: 100%;
+    height: 500px;
+    background-image: url("../assets/Fondos-El-Chalten.webp");
+    background-size: cover;
+}
+.section1{
+    color: darkslategrey;
+    position: absolute;
+    top: 50px;
+    right: 50%;
+
+}
+
+.nav-bar{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    position: fixed;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-bar li{
+    list-style: none;
+    margin: 20px;
+    
+}
+.nav-bar li a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    background-color: aqua;
+}
+
+.section2{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 120px 120px 1fr 1fr;
+    grid-template-areas: 
+    "item1 item1 item1 item2"
+    "item3 item3 item3 item2"
+    "item4 item4 item4 item5"
+    "item6 item6 item6 item7"
+    "item6 item6 item6 item7"
+    ;
+}
+
+.item-1 {
+grid-area: item1;
+background-color: aliceblue;
+}
+.item-2 {
+grid-area: item2;
+}
+.item-3 {
+ grid-area: item3;
+ background-color:white;
+
+}
+.item-4 {
+grid-area: item4;
+width: 840px;
+height: 460px;
+}
+.item-5 {
+grid-area: item5;
+
+}
+.item-6 {
+grid-area: item6;
+
+}
+.item-7 {
+grid-area: item7;
+
+}
